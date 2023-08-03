@@ -1,3 +1,4 @@
+//use std::error::Error;
 use std::fs;
 use std::io::{self, Error, ErrorKind};
 
@@ -93,4 +94,41 @@ fn create_directory_rollback() -> Result<(), Error> {
     println!("Rolling back directory creation");
     // Perform rollback logic here
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_copy_file_task() -> Result<(), Box<Error>> {
+        // Test copying a file (replace with actual test logic)
+        let result = copy_file_task();
+        assert!(result.is_ok()); // Check if the task completed successfully
+        Ok(())
+    }
+
+    #[test]
+    fn test_copy_file_rollback() -> Result<(), Box<Error>> {
+        // Test rolling back file copy (replace with actual test logic)
+        let result = copy_file_rollback();
+        assert!(result.is_ok()); // Check if the rollback completed successfully
+        Ok(())
+    }
+
+    #[test]
+    fn test_create_directory_task() -> Result<(), Box<Error>> {
+        // Test creating a directory (replace with actual test logic)
+        let result = create_directory_task();
+        assert!(result.is_ok()); // Check if the task completed successfully
+        Ok(())
+    }
+
+    #[test]
+    fn test_create_directory_rollback() -> Result<(), Box<Error>> {
+        // Test rolling back directory creation (replace with actual test logic)
+        let result = create_directory_rollback();
+        assert!(result.is_ok()); // Check if the rollback completed successfully
+        Ok(())
+    }
 }
