@@ -1,4 +1,4 @@
-# Transactional Task Execution Program
+# Transactional Task Execution Program [![Rust](https://github.com/stormogulen/Installer/actions/workflows/rust.yml/badge.svg)](https://github.com/stormogulen/Installer/actions/workflows/rust.yml)
 
 This Rust program illustrates how to implement transactional task execution and rollbacks. It uses a `Transaction` struct to manage tasks and their corresponding rollback functions.
 
